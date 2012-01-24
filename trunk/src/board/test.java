@@ -253,23 +253,22 @@ public class test {
 	}
 
 	private static boolean testDirectionBetween() {
-		PositionState s = new PositionState(PositionState.getEmptyBoard());
-		if (s.getDirectionBetween("E4", "E5") != 0x10) {
+		if (PositionState.getDirectionBetween("E4", "E5") != 0x10) {
 			return false;
 		}
-		if (s.getDirectionBetween("E4", "D5") != 0xf) {
+		if (PositionState.getDirectionBetween("E4", "D5") != 0xf) {
 			return false;
 		}
-		if (s.getDirectionBetween("E4", "F5") != 0x11) {
+		if (PositionState.getDirectionBetween("E4", "F5") != 0x11) {
 			return false;
 		}
-		if (s.getDirectionBetween("E4", "E2") != -0x10) {
+		if (PositionState.getDirectionBetween("E4", "E2") != -0x10) {
 			return false;
 		}
-		if (s.getDirectionBetween("E4", "A1") != 0) {
+		if (PositionState.getDirectionBetween("E4", "A1") != 0) {
 			return false;
 		}
-		if (s.getDirectionBetween("E4", "D3") != -0x11) {
+		if (PositionState.getDirectionBetween("E4", "D3") != -0x11) {
 			return false;
 		}
 		return true;
