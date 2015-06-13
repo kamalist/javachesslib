@@ -1,0 +1,1 @@
+A Java Chess Library intended to be multi-use. This library represents boards, positions, squares, etc.
